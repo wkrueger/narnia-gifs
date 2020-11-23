@@ -5,7 +5,7 @@ export function Footer() {
     <footer className={styles.footer}>
       <style jsx>{`
         .footertext {
-          flex-basis: 90%;
+          flex-basis: 100%;
           text-align: center;
           margin-bottom: 0.5rem;
         }
