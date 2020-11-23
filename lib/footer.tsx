@@ -45,11 +45,7 @@ export function Links() {
         Twitch
       </a>{" "}
       |
-      <a
-        href="https://github.com/wkrueger/castle-narnia-gifs"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href="https://github.com/wkrueger/narnia-gifs" target="_blank" rel="noopener noreferrer">
         Website Source
       </a>{" "}
     </>
