@@ -1,3 +1,14 @@
+# Narnia gifs
+
+A static, free-hosted website to show the gifs from [this spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vSbV1-T1yCHUIRFcpu-dui1ENcXlVV94C89hYOTIYd5t-l7inoOG67y372O6ZTqy4yG5pw2dzUPuyJT/pubhtml?gid=0&single=true).
+
+I used this as a study case for Next.js with a headless CMS.
+
+After testing the CMS with success, I ended up going back to JSONs stored in the project.
+
+
+# Scaffold Readme
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
