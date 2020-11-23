@@ -2,7 +2,7 @@ import Head from "next/head"
 import Link from "next/link"
 import React from "react"
 import styles from "../styles/Home.module.css"
-import { Footer } from "./_footer"
+import { Footer } from "../lib/footer"
 
 // export async function getStaticProps() {
 //   const response = await datocmsRequest({
@@ -17,7 +17,7 @@ import { Footer } from "./_footer"
 // }
 
 export async function getStaticProps() {
-  const { allBosses } = await import("./data/allBosses")
+  const { allBosses } = await import("../lib/data/allBosses")
   return { props: { data: { allBosses } } }
 }
 

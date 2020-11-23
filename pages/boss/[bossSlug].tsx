@@ -4,7 +4,7 @@ import Link from "next/link"
 import React, { useState } from "react"
 import { datocmsRequest } from "../../lib/datocmsRequest"
 import homeStyles from "../../styles/Home.module.css"
-import { Footer } from "../_footer"
+import { Footer } from "../../lib/footer"
 
 // export async function getStaticPaths() {
 //   const allbossesResp = await datocmsRequest({
@@ -22,7 +22,7 @@ import { Footer } from "../_footer"
 // }
 
 export async function getStaticPaths() {
-  const { allBosses } = await import("../data/allBosses")
+  const { allBosses } = await import("../../lib/data/allBosses")
   const paths = allBosses.map((boss) => ({ params: { bossSlug: boss.slug } }))
   return { paths, fallback: false }
 }
@@ -60,9 +60,8 @@ export async function getStaticPaths() {
 // }
 
 export async function getStaticProps({ params }) {
-  const { allBosses } = await import("../data/allBosses")
-  const { allMediaitems: mediaitemsDb } = await import("../data/mediaItems")
-  console.log({ mediaitemsDb })
+  const { allBosses } = await import("../../lib/data/allBosses")
+  const { allMediaitems: mediaitemsDb } = await import("../../lib/data/mediaItems")
   const bossSlug = params.bossSlug
   const boss = allBosses.find((boss) => boss.slug === bossSlug)
   if (!boss) return { notFound: true }
